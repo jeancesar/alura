@@ -158,3 +158,5 @@ Acima, iniciamos uma sessão de "bisect" e marcamos o commit HEAD como "bad" (ru
 
 Git possui 3 estados: Working Directory, Index e Head.
 Ao digitarmos HEAD~ seguido de um número inteiro n, será feita uma referência ao n-ésimo commit anterior ao HEAD. Por exemplo, HEAD~1, faz referência ao penúltimo commit e HEAD~2, ao antepenúltimo. No caso específico do penúltimo commit, também pode-se referenciá-lo utilizando o atalho HEAD^.
+
+Opção gráfica para o GIT: http://git-cola.github.io/downloads.html
