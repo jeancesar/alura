@@ -160,3 +160,14 @@ Git possui 3 estados: Working Directory, Index e Head.
 Ao digitarmos HEAD~ seguido de um número inteiro n, será feita uma referência ao n-ésimo commit anterior ao HEAD. Por exemplo, HEAD~1, faz referência ao penúltimo commit e HEAD~2, ao antepenúltimo. No caso específico do penúltimo commit, também pode-se referenciá-lo utilizando o atalho HEAD^.
 
 Opção gráfica para o GIT: http://git-cola.github.io/downloads.html
+
+Grunt
+----------------------------------------------------
+"npm init" => Por uma questão de organização, o Node.js pode tomar nota de todos os módulos de que sua aplicação depende num arquivo chamado package.json. Podemos criá-lo através do próprio npm executando o seguinte comando dentro da pasta projeto.
+"npm install grunt --save-dev" => O comando baixará a versão mais atual do Grunt gravando-a dentro da pasta node_modules. Esta pasta guarda todos os módulos usado pelo seu projeto. O parâmetro --save-dev adiciona a dependência no arquivo package.json
+"npm install grunt-cli -g" => É importante que você tenha permissão de administrador já que estamos instalando o módulo globalmente através do parâmetro -g. Este módulo nos permite chamar o comando 'grunt' em qualquer local em nosso terminal.
+"npm install" => O comando lerá de package.json todos os módulos de que sua aplicação depende baixando-os todos de uma só vez, levando em consideração cada versão utilizada.
+"npm install grunt-contrib-copy --save-dev" instala o plugin grunt-contrib-copy
+"npm install grunt-contrib-clean --save-dev" => instala o plugin grunt-contrib-clean
+
+O arquivo Gruntfile.js é onde configuramos tarefas (tasks). Todo o código ficará envolto por uma função wrapper que recebe como parâmetro o objeto do Grunt.
