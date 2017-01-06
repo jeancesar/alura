@@ -171,4 +171,16 @@ Grunt
 "npm install grunt-contrib-clean --save-dev" => instala o plugin grunt-contrib-clean
 "grunt.registerTask('dist', ['clean', 'copy']);" => registrar novas tasks que chamam outras na sequência que definirmos. Repare que a função acima recebe como primeiro parâmetro o nome da nossa task. O segundo é um array com o nome de todas as tasks já configuradas pelo Grunt. A ordem é importante, pois a primeira será executada antes da segunda e por ai vai.
 
+CONCATENACAO E MINIFICAÇÃO
+npm install grunt-contrib-concat --save-dev
+npm install grunt-contrib-uglify --save-dev
+npm install grunt-contrib-cssmin --save-dev
+npm install grunt-usemin --save-dev
+O grunt-usemin é um plugin que facilita incrivelmente a configuração das tasks envolvidas no processo de merge e minificação. Só precisamos configurar sua task para que ela gere automaticamente os parâmetros de configuração para os três plugins que vimos anteriormente.
+npm install grunt-rev --save-dev => responsável em renomear os arquivos adicionando seu hash como prefixo
+npm install grunt-contrib-coffee --save-dev => compilador de coffescript
+npm install grunt-contrib-less --save-dev => compilador de less
+npm install grunt-contrib-watch --save-dev => executaremos automaticamente toda vez que novos arquivos forem criados ou modificados através da task watch.
+
+
 O arquivo Gruntfile.js é onde configuramos tarefas (tasks). Todo o código ficará envolto por uma função wrapper que recebe como parâmetro o objeto do Grunt.
