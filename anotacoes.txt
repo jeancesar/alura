@@ -181,6 +181,8 @@ npm install grunt-rev --save-dev => responsável em renomear os arquivos adicion
 npm install grunt-contrib-coffee --save-dev => compilador de coffescript
 npm install grunt-contrib-less --save-dev => compilador de less
 npm install grunt-contrib-watch --save-dev => executaremos automaticamente toda vez que novos arquivos forem criados ou modificados através da task watch.
+npm install grunt-contrib-jshint --save-dev => validação do codigo JS sem a necessidade de um navegador ou coisa do tipo.
+npm install grunt-browser-sync --save-dev => sincronização de paginas em varios dispositivos.
 
 
 O arquivo Gruntfile.js é onde configuramos tarefas (tasks). Todo o código ficará envolto por uma função wrapper que recebe como parâmetro o objeto do Grunt.
