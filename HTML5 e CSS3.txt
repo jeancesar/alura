@@ -1,0 +1,36 @@
+HTML e CSS 3 I
+----------------------------------------------------
+<main>: conteúdo principal da página
+<header>: cabeçalho da página ou de uma região dela
+<footer>: mesma ideia da tag <header> para o rodapé
+<aside>: conteúdo auxiliar ao conteúdo principal, como links relacionados ao conteúdo
+<article>: conteúdo que, por si só, já tem um sentido completo, como um post de um blog ou uma notícia
+<section>: parte/seção de uma página ou texto
+A Propriedade box-sizing do CSS ajuda a fazer o calculo automático de largura da "caixa" do elemento apartir de uma origem. Ex. bordas ou padding.
+display: inline-block => ele deixa os elementos na horizontal e continua mantendo a opção de editar altura e largura.
+ChromeVox => plugin para leitor de tela.
+Clear => propriedade para fazer as limpezas de float dos elementos seguintes.
+position: relative => mudar a posição do elemento de acordo com a posição original dele.
+position: absolute => mudar a posição do elemento em relação a janela do navegador ou ao elemento pai quando ele tiver um position definido
+Porcentagem são medidadas baseadas no elemento pai
+transform: utilizado para modifcar a estrutura do elemento sendo: rotate, skew, scale, translate.
+Nas transformações em 3D trabalhamos com três eixos para definir o tamanho dos nossos objetos: x, y e z. Este último é novidade, ele indica a profundidade do objeto. Os dois primeiros são eixos que já vínhamos trabalhando.
+Agora especificamos para cada eixo suas transformações:
+
+translateX
+translateY
+translateZ
+
+Calculo para saber o translate
+Na horizontal: cos(45) * (altura - largura) + largura
+Na vertical: -1 * sen(45) * altura
+
+O elemento section precisa pegar a transformação de dentro do cubo também. Para isso vamos utilizar a propriedade transform-style: preserve-3d dentro da classe "cubo", para que o navegador use as transformações feitas com cubo nos elementos dentro dele. Dessa forma preserva-se o efeito 3D de todos os elementos. Sem isso as faces não aparecem com esse efeito conjunto. O cubo rotacionaria, mas as faces continuariam com uma impressão achatada.
+Como vimos, podemos ter diversas cenas 3D em nossa página. Cada uma delas pode ter sua própria barra de rolagem. Para tal, utilizamos a propriedade overflow com o valor scroll. O conteúdo desse elemento vai aparecer cortado e o usuário poderá rolar para visualizá-lo
+
+
+Vimos, então, três novas medidas:
+* rem: tem como padrão a fonte do navegador;
+* em: tem como padrão a fonte do elemento pai;
+* ch: tem como base a largura do caractere zero da fonte usada;
+* Vimos que a porcentagem tem como base ou a largura do elemento pai ou o font-size do elemento anterior.

@@ -1,0 +1,30 @@
+Javascript
+----------------------------------------------------
+"elemento.textContent" => Pega somente o conteudo de uma tag html
+"document.getElementsByTagName("nome-da-tag")" => Obtem um array dos elementos da tag selecionada para pegar apenas o primeiro usar "[0]" no fim da função.
+"document.getElementsByClassName("nome-da-class")" => Obtem um array dos elementos da class selecionada para pegar apenas o primeiro usar "[0]" no fim da função.
+"document.getElementById("nome-do-id")" => Obtem o elemento selecionado pelo id.
+"addEventListener("nome-do-evento","funcao-aqui")" => Outra maneira de chamar eventos em elementos html mas podendo chamar mais de um evento para o mesmo elemento.
+"querySelector("seletor")" => Obtem o primeiro elemento do seletor passado por parâmetro (tag, .class, #id)
+"querySelectorAll("seletor")" => Obtem um array do elemento do seletor passado por parâmetor (tag, .class, #id) 
+"event.preventDefault();" => previne o comportamento padrão
+"parseInt()" => convert uma valor numero em string para numero;
+"Math.random()" => Sorteia um numero aleatorio com casa decimais.
+"Math.round()" => Arredonda o número para cima.
+"parseFloat()" => converte texto para decimal;
+"Object.freeze(objeto)" => Converte um objeto para um estado imutavel não permitindo alterações ao longo do seu uso.
+"Object.isFrozen(objeto)" => Testa se um determinado objeto está congelado ou não.
+"let" => tipo de declaração de variavel que funciona para escopo em bloco.
+"reduce()" => reduce, que todo array em JavaScript possui, inclusive desde a versão ES5. O retorno da função é um único valor, em nosso caso o total do volume. A função reduce recebe uma função como parâmetro e um valor. Na função, o primeiro parâmetro é a variável que receberá a soma do volume das nossas negociações. Já o segundo parâmetro nos dá acesso à negociação que estamos iterando no momento. Contudo, nosso código daria um erro, pois o primeiro parâmetro que receberá o total precisa ser inicializado. É por isso que o segundo parâmetro da função reduce é a inicialização desse valor, em nosso caso, começamos de 0.
+"Reflect.apply" => A classe Reflect existe no ES2015 e aglutina diversas funções que nos auxiliam em metaprogramação. Usamos a função Reflect.apply, que recebe como primeiro parâmetro a função que queremos executar. 
+O segundo parâmetro é o contexto no qual queremos que ela seja executada, ou seja, this._contexto passa a ser o this durante sua invocação.
+"Arrow functions" => A palavra arrow, em português, significa flecha e uma arrow function utiliza => em sua declaração, o que lembra uma flecha. (item, outroitem) => item + outroitem;
+Diferente das funções tradicionais, que possuem this dinâmico, as arrow functions possuem um this estático, isto é, ele não muda de acordo com o contexto da chamada da função e mantém o this no momento de sua declaração.
+"(spread operator)" => https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Spread_operator
+"arguments" => É uma variável implícita que nos dá acesso a todos os parâmetros passados para a função ou método.
+
+DOM é um acrônimo para Document Object Model, basicamente ele é uma representação de uma página html no mundo Javascript e pode ser acessado a partir da variável document, que representa a raiz de nossa página.
+Funções são estruturas que nos possibilitam isolar uma determinada lógica e dar um nome a ela, permitindo que a chamemos em vários pontos de nosso código! Elas ajudam muito organizar o nosso código e deixar ele mais legível.
+Funções anônimas são funções que não recebem um nome para ser executadas.
+É comum, quando estamos programando em Javascript, querer adicionar um comportamento ao clique de um elemento, ao usuário passar o mouse em cima de um elemento, quando o texto de um <input> for alterado e etc, estas ações são chamadas de eventos, que serão disparados em determinado momento.
+Com Mixin podemos "pegar emprestado" o método de outra classe sem termos que ter uma instância dessa classe como é o caso de composição. Utilizando o Reflect.apply(Aviao.prototype.voa, this, []);

@@ -1,0 +1,26 @@
+Ruby
+----------------------------------------------------
+".abs" => metodo absoluto que retorna um valor sem sinal
+"<<" => atribui um valor na posição final do array
+"strip" => limpa valores ou espacos em branco no inicio e fim de uma string
+"def nome (parametros)" => declara uma função com parametro ou não
+"#{}" => interpolacao de string ex.: puts "Meu nome é #{nome}"
+"unless" => é um if ao contrario ou negação de uma afirmação
+"Rand" => obter números aleatorios em determinada faixa ou 0 e 1 padrão
+require_relative "nome_do_arquivo" => funcao que invoca um arquivo no mesmo diretorio do arquivo que está sendo executado
+Assim como existe a instrução require_relative existem também a require. Ela busca em uma lista de diretórios específicos pelo arquivo mencionado. Por exemplo, podemos usar ela para carregar a biblioteca padrão de acesso HTTP:
+	require "net/http"
+	require "uri"
+"uri" => URI.parse("http://www.casadocodigo.com.br")
+"Net::HTTP.get_print(uri)"
+"include? variavel" => Verifica se em determinada linha ou array encontra-se o elemento procurado
+"index" => retorna a posição do elemento (coluna)
+each_with_index do |variavel com a linha, index|
+"join" => junta todos os elementos em de um array em um só: array.join(",")
+array.dup => ele duplica o array origem para um novo array.
+
+Em Ruby, tudo que não é nulo nem falso é considerado verdadeiro.
+Array passado como parametro eles são referencias ou apontados ao array origem
+O ::attr_accessor:: cria na verdade dois métodos. Um para alterar e outro para ler o valor de um atributo. Como ler um atributo diretamente de dentro de uma classe? Através do uso de um "@"
+Além do attr_accessor existem também o attr_reader, que fornece somente um leitor, e o attr_writer, que disponibiliza somente o método de escrita.
+Recursão é o ato de uma função chamar ela mesma. Base da recursão é o critério onde essa recursão para, caso contrário ela executaria indeterminadamente - o que poderia causar um estouro da pilha de execução.

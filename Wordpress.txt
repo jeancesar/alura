@@ -1,0 +1,3 @@
+Wordpress
+----------------------------------------------------
+Poedit.net => para realizar as traduções do tema do wordpress

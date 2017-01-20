@@ -1,0 +1,12 @@
+Gulp
+----------------------------------------------------
+"npm install gulp@3.9.0 --save-dev" => instala o gulp no projeto
+"gulp.src('folder ou file')" => esse comando faz é gerar um fluxo de leitura para a origem projeto/src/img e todos os seus arquivos.
+"gulp.dest('folder ou file')"" => esse comoando faz é gerar um fluxo de gravação para o destino e todos os seus arquivos.
+"npm install gulp-imagemin@2.3.0 --save-dev" => baixar o modulo de otimização de imagem.
+"npm run gulp 'nome da tarefa'" => executa determinada tarefa do gulp.
+"npm install gulp-clean@0.3.1 --save-dev" => apagar arquivos ou pasta
+
+O Gulp é uma ferramenta de build totalmente feita em JavaScript tornando-a atrativa no mundo front-end, especialmente para nosso projeto. Porém, para que funcione, precisamos do Node.js instalado em nosso máquina.
+
+Outra vantagem de salvarmos nossas dependências em package.json é que você pode compartilhar seu projeto sem a pasta node_modules, que deve ser baixada novamente através do comando npm install, sem qualquer parâmetro. O comando lerá do package.json todos os módulos de que sua aplicação depende baixando-os todos de uma só vez, levando em consideração cada versão utilizada.

@@ -1,0 +1,25 @@
+Docker
+----------------------------------------------------
+1) Instalar o pacote docker.io: sudo apt-get -y install docker.io
+2) Para rodar o docker automaticamente quando o Ubuntu inicia: sudo update-rc.d docker defaults
+3) Roda o docker (se não tiver rodando ainda): sudo service docker start
+4) Teste a instalação do docker: sudo docker run hello-world
+
+Todas as imagens vem do docker hub
+
+docker images: lista toda as imagens, como seus nomes criados aleatoriamente ou não,
+docker run: cria os containers,
+docker pull: faz o download de imagens,
+docker ps: acompanha os containers em execução.
+Docker pull "nome_da_imagem "=> Irá fazer o download da imagem direto do hub
+Docker Images => lista todas as imagens já baixadas
+docker run --name "nome_do_container" -e parametro_que_seta_variaveis_para_o_container -d (opção para rodar em background) "nome_da_imagem"
+docker run --name blog-alura --link "nome_do_container":"nome_da_imagem" -e WORDPRESS_DB_PASSWORD=teste123 -p "porta_host:porta_container" -d wordpress
+docker exec -i -t "nome do container" bash : criar uma interatividade com o container via terminal
+docker run -it "nome da imagem" bash : Faz o mesmo do item acima
+docker ps: lista os containers em execução
+docker ps -a: lista todos os containers criados
+docker rm [id] / docker rm [nome]: remove um container criado
+docker rm $(docker ps -qa): Remove vários containers de uma vez
+docker stop [nome]: Parar um container em execução
+docker rmi [nome] / docker rmi [id]: Remove uma imagem criada
