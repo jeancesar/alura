@@ -34,3 +34,7 @@ Vimos, então, três novas medidas:
 * em: tem como padrão a fonte do elemento pai;
 * ch: tem como base a largura do caractere zero da fonte usada;
 * Vimos que a porcentagem tem como base ou a largura do elemento pai ou o font-size do elemento anterior.
+
+A propriedade Opacity vai dos valores 0 até 1.
+background-image: linear-gradient(direction, color-stop1, color-stop2, ...); => adiciona o efeito gradiente no background
+background-size: auto|length|cover|contain|initial|inherit; => especifica a tamanho do background dentro do elemento.
