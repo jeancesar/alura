@@ -43,3 +43,10 @@ Seletores Avançados
 -----------------------------
 ~:depois => utilizado para selecionar todos os elementos depois de determinado elemento exemplo li ~ li (lista)
 +:logo depois => utilizado para selecionar o elemento logo depois de determinado element exemplo img + p
+>: server para pegar o elemento filho direto do elemento pai, excluindo seus ancestrais ou descendentes
+:nth-of-type() pega somente o elemento pelo seu tipo
+
+Pseudoclasses
+Estruturais: first-child, last-child, nth-child, nth-of-type
+dinamicas: hover, focus, active, checked
+:only-child somente os filhos unicos
