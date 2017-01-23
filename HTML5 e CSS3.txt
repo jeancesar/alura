@@ -38,3 +38,8 @@ Vimos, então, três novas medidas:
 A propriedade Opacity vai dos valores 0 até 1.
 background-image: linear-gradient(direction, color-stop1, color-stop2, ...); => adiciona o efeito gradiente no background
 background-size: auto|length|cover|contain|initial|inherit; => especifica a tamanho do background dentro do elemento.
+
+Seletores Avançados
+-----------------------------
+~:depois => utilizado para selecionar todos os elementos depois de determinado elemento exemplo li ~ li (lista)
++:logo depois => utilizado para selecionar o elemento logo depois de determinado element exemplo img + p
