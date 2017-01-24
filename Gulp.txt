@@ -1,12 +1,26 @@
 Gulp
 ----------------------------------------------------
+"npm install" => para baixar os componentes ja configurados pelo package.json
 "npm install gulp@3.9.0 --save-dev" => instala o gulp no projeto
 "gulp.src('folder ou file')" => esse comando faz é gerar um fluxo de leitura para a origem projeto/src/img e todos os seus arquivos.
 "gulp.dest('folder ou file')"" => esse comoando faz é gerar um fluxo de gravação para o destino e todos os seus arquivos.
 "npm install gulp-imagemin@2.3.0 --save-dev" => baixar o modulo de otimização de imagem.
 "npm run gulp 'nome da tarefa'" => executa determinada tarefa do gulp.
 "npm install gulp-clean@0.3.1 --save-dev" => apagar arquivos ou pasta
+"npm install gulp-concat@2.6.0 --save-dev" => concatenação automática de scripts
+"npm install gulp-html-replace@1.5.4 --save-dev" => realiza o replace das marcações HTML
+"npm install gulp-uglify@1.4.1 --save-dev" => realiza a minificação dos arquivos
+"npm install gulp-usemin@0.3.14 --save-dev" => 
+"npm install browser-sync@2.9.8 --save-dev" => trabalha com a sincronização de browser.
+"npm install gulp-jshint@1.11.2 --save-dev" => debuger javascript
+"npm install jshint-stylish@2.0.1 --save-dev" => estilo de relatorio para o jshint
+"npm install gulp-csslint@0.2.0 --save-dev" => debuger para css
 
 O Gulp é uma ferramenta de build totalmente feita em JavaScript tornando-a atrativa no mundo front-end, especialmente para nosso projeto. Porém, para que funcione, precisamos do Node.js instalado em nosso máquina.
 
 Outra vantagem de salvarmos nossas dependências em package.json é que você pode compartilhar seu projeto sem a pasta node_modules, que deve ser baixada novamente através do comando npm install, sem qualquer parâmetro. O comando lerá do package.json todos os módulos de que sua aplicação depende baixando-os todos de uma só vez, levando em consideração cada versão utilizada.
+
+A vantagem do gulp em relação ao grunt é que ele não fica gravando em disco pois seus processos é tudo feito em streaming, ou seja em memoria.
+
+Para acessarmos nosso projeto através de um servidor web eu faço: http://localhost:3000 (a porta é do seu servidor, pode ser 8080, etc.), veja que a porta é a mesma do BrowserSync e isso nos causará problemas. Podemos resolver isso facilmente habilitando o proxy do BrowserSync. 
+proxy: "localhost:3000"
