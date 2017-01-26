@@ -15,6 +15,8 @@ Gulp
 "npm install gulp-jshint@1.11.2 --save-dev" => debuger javascript
 "npm install jshint-stylish@2.0.1 --save-dev" => estilo de relatorio para o jshint
 "npm install gulp-csslint@0.2.0 --save-dev" => debuger para css
+"npm install gulp-autoprefixer@3.0.2 --save-dev" => adicionar os prefixer para suporte de recursos css em desenvolvimento
+"npm install gulp-less@3.0.3 --save-dev" => Compilador less
 
 O Gulp é uma ferramenta de build totalmente feita em JavaScript tornando-a atrativa no mundo front-end, especialmente para nosso projeto. Porém, para que funcione, precisamos do Node.js instalado em nosso máquina.
 
