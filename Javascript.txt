@@ -22,6 +22,13 @@ O segundo parâmetro é o contexto no qual queremos que ela seja executada, ou s
 Diferente das funções tradicionais, que possuem this dinâmico, as arrow functions possuem um this estático, isto é, ele não muda de acordo com o contexto da chamada da função e mantém o this no momento de sua declaração.
 "(spread operator)" => https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Spread_operator
 "arguments" => É uma variável implícita que nos dá acesso a todos os parâmetros passados para a função ou método.
+[].includes() => verifica no array se tem o determinado valor
+
+... => parametros rest, quando o último parâmetro é REST, podemos passar quantos parâmetros quisermos para o construtor, função ou método que eles virarão um array!
+
+Template string => `${variavel}`
+
+handler (trap) em proxy => get: function(target, prop, receiver) { return Reflect.get(target, prop, receiver);} 
 
 DOM é um acrônimo para Document Object Model, basicamente ele é uma representação de uma página html no mundo Javascript e pode ser acessado a partir da variável document, que representa a raiz de nossa página.
 Funções são estruturas que nos possibilitam isolar uma determinada lógica e dar um nome a ela, permitindo que a chamemos em vários pontos de nosso código! Elas ajudam muito organizar o nosso código e deixar ele mais legível.
