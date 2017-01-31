@@ -1,3 +1,11 @@
 Wordpress
 ----------------------------------------------------
 Poedit.net => para realizar as traduções do tema do wordpress
+
+Banco de dados definir com utf8_unicode_ci
+
+Estrutura minina para o tema wordpress é index.php e style.css
+
+get_template_directory_uri => obtem acesso a pasta raiz do tema
+
+register_post_type() => para cadastrar novos tipos de post
