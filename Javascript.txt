@@ -35,3 +35,5 @@ Funções são estruturas que nos possibilitam isolar uma determinada lógica e 
 Funções anônimas são funções que não recebem um nome para ser executadas.
 É comum, quando estamos programando em Javascript, querer adicionar um comportamento ao clique de um elemento, ao usuário passar o mouse em cima de um elemento, quando o texto de um <input> for alterado e etc, estas ações são chamadas de eventos, que serão disparados em determinado momento.
 Com Mixin podemos "pegar emprestado" o método de outra classe sem termos que ter uma instância dessa classe como é o caso de composição. Utilizando o Reflect.apply(Aviao.prototype.voa, this, []);
+
+Um Array em Javascript possui o método sort. Este método recebe uma estratégia de ordenação, ou seja, essa estratégia deve ser passada pelo desenvolvedor, mas deve seguir algumas regras.
