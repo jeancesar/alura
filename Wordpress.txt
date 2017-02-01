@@ -24,4 +24,8 @@ register_post_type() => para cadastrar novos tipos de post (https://codex.wordpr
 register_taxonomy() => criar categorias
 get_terms() => obtem as categorias
 
-wp_redirect( home_url() ); => redirect para determinado página 
+wp_redirect( home_url() ); => redirect para determinado página
+
+Meta box => campos adicionais para os posts https://developer.wordpress.org/reference/functions/add_meta_box/
+
+https://codex.wordpress.org/Theme_Development
