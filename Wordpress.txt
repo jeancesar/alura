@@ -8,4 +8,20 @@ Estrutura minina para o tema wordpress é index.php e style.css
 
 get_template_directory_uri => obtem acesso a pasta raiz do tema
 
-register_post_type() => para cadastrar novos tipos de post
+register_post_type() => para cadastrar novos tipos de post (https://codex.wordpress.org/Function_Reference/register_post_type)
+ icon do wp => https://developer.wordpress.org/resource/dashicons/
+
+ add_action('quando deve ser executado', 'nome da função');
+
+ WP_Query => faz as consultas ou query no banco de dado para o loop
+
+ function geraTitle() {
+            bloginfo ('name'); 
+            if( !is_home() ) echo ' | ';
+            the_title();
+        }
+
+register_taxonomy() => criar categorias
+get_terms() => obtem as categorias
+
+wp_redirect( home_url() ); => redirect para determinado página 
